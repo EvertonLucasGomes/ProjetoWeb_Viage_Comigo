@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Everton Lucas de Lima Gomes">
+    <link rel="stylesheet" href="css/styleSecond.css">
+    <title>Viaje Comigo</title>
+</head>
+
+<body>
+    <!-- menu -->
+
+    <div id="Menu" class="containerMenu">
+        <a href="index.html" class="Image"><img src="images/title.png" alt="site Viage comigo" class="box"></a>
+
+        <div id="card">
+            <a href="destinos.html" class="textMenu"><b>Roteiros</b></a>
+        </div>
+
+        <div id="card">
+            <a href="manual.html" class="textMenu"><b>Manual do Turista</b></a>
+        </div>
+
+        <div id="card">
+            <a href="praias.html" class="textMenu"><b>Praias</b></a>
+        </div>
+
+        <div id="card">
+            <a href="speak.html" class="textMenu"><b>Fale Conosco</b></a>
+        </div>
+
+    </div>
+
+    <!-- mapeamento img do Brasil -->
+
+    <map name="Brasil">
+        <area shape="poly"
+            coords="236,45, 355,16, 383,116, 538, 87, 572, 39, 707, 178, 651, 271, 673, 299, 664, 219, 679, 348, 691, 347, 680,372, 696,403, 694,469, 592,464, 601,393, 442,380, 406,330, 395,361, 320, 365, 323,423, 355,426, 342,489, 230,429, 229,394, 110,434, 101,393, 64,409, 12,351, 97,261, 107,265, 124,184, 104, 159, 109,113, 107,99, 201,133, 270,94"
+            href="#norte" alt="Norte">
+        <area shape="poly"
+            coords="325,369, 395,367, 405,336, 416,362, 440,383, 596,395, 585,433, 589,467, 635,482, 695,473, 703,519, 683,515, 661,563, 658,602, 595,611, 574,628, 573,653, 498,744, 464,700, 419, 696, 421,584, 406,553, 358,555, 365,457, 365,421, 327,419"
+            href="#centro" alt="Centro-Oeste">
+        <area shape="poly"
+            coords="503,749, 494,782, 507,785, 514,800, 512,822, 424,900, 444,892, 522,960, 515,973, 517,987, 532,974, 546,946, 588, 909, 609,869, 627,841, 630,790, 637,778, 612,762, 602,723, 530,712, 513,732"
+            href="#sul" alt="Sul">
+        <area shape="poly"
+            coords="545,705, 568,707,585,714, 600,714, 609,726, 622,757, 647,766, 718,735, 741,721, 780,723, 813,679, 842,644, 842,617, 828,606, 824,582, 840,561, 741,514, 712,531, 697,531,684,531, 684,544, 675,533, 675,574, 672,600, 659,613, 624,615, 596,625,585,653"
+            href="#sudeste" alt="sudeste">
+        <area shape="poly"
+            coords="712,185, 748,206, 739,230, 780,212, 832,226, 859,229, 925,281, 970,295, 981,348, 967,390, 891,478, 875,472, 866,553, 858,601, 846,608, 834,585, 841,579, 852,563, 851,555, 805,528, 774,513, 748,501, 708,519, 706,477, 706,439, 703,419, 720,407, 701,398, 698,386, 689,371, 701,351, 694,341, 683,341, 674,326, 678,287, 663,275, 688,247, 698,226, 708,202, 709,192"
+            href="#nordeste" alt="Nordeste">
+
+    </map>
+
+    <!-- botão fixo -->
+
+    <div class="Voltar">
+        <a href="#Menu" class="textBotton"><b>Voltar ao topo</b></a>
+    </div>
+
+    <!-- seção mapa do brasil -->
+
+    <div class="cotainerBrasil">
+        <!-- <h1>Clique em alguma região do mapa ou desça a pagina</h1> -->
+        <img src="images/Brasil.png" usemap="#Brasil" alt="Mapa Brasileiro Por Regiões">
+    </div>
+
+    <!-- seção norte -->
+
+    <div id="norte" class="containerBody" style="background: url(images/amazonia.jpg);
+        background-size: 100% 100%;">
+        <div class="informs">
+            <h1 style="top: 0; left: 25%;"> Região Norte</h1>
+            <p>Destinos para visitar na região Norte:</p>
+            <hr>
+            <ul>
+                <li>Encontro das águas – Amazonas</li>
+                <li>Parque do Jalapão – Tocantins</li>
+                <li>Alter do Chão – Pará</li>
+                <li>Monte Roraima – Roraima</li>
+                <li>Ilha do Bananal – Tocantins</li>
+                <li>Teatro Amazonas – Amazonas</li>
+                <li>Parque Nacional de Anavilhanas – Amazonas</li>
+                <li>Mercado Ver-o-Peso – Pará</li>
+                <li>Rio Madeira – Rondônia</li>
+                <li>Trilha da Samaúma – Amapá</li>
+                <li>Passarela Joaquim Macedo – Acre</li>
+            </ul>
+        </div>
+
+        <!-- carrossel -->
+
+        <section class="galery">
+            <div class="fotos">
+                <img src="images/regiãoNorte1.jpg" alt="Teatro Amazonas">
+                <img src="images/regiãoNorte2.jpg" alt="Monte Roraima">
+                <img src="images/regiãoNorte3.jpg" alt="Parque Nacional de Anavilhanas">
+                <img src="images/regiãoNorte4.jpg" alt="Encontro das águas">
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- seção nordeste -->
+
+    <div id="nordeste" class="containerBody" style="background: url(images/nordeste.jpg);
+        background-size: 100% 100%;">
+        <div class="informs">
+            <h1 style="top: 0; left: 20%;"> Região Nordeste</h1>
+            <p>Destinos para visitar na região Nordeste:</p>
+            <hr>
+            <ul>
+                <li>Lençóis Maranhenses – Maranhão</li>
+                <li>Serra da Capivara – Piaui</li>
+                <li>Dunas de Natal – Rio Grande do Norte</li>
+                <li>Porto de Galinhas – Pernambuco</li>
+                <li>Fernando de Noronha – Pernambuco</li>
+                <li>Cânion do Xingó – Sergipe</li>
+                <li>Jericoacoara – Ceará</li>
+                <li>Praia dos Carneiros – Pernambuco</li>
+                <li>Maragogi – Alagoas</li>
+                <li>Centro histórico de Salvador – Bahia</li>
+                <li>Foz do rio São Francisco – Alagoas</li>
+                <li>Chapada Diamantina – Bahia</li>
+            </ul>
+        </div>
+
+        <!-- carrossel -->
+
+        <section class="galery">
+            <div class="fotos">
+                <img src="images/nordeste1.jpg" alt="Fernando de Noronha">
+                <img src="images/nordeste2.jpg" alt="Chapada Diamantina">
+                <img src="images/nordeste3.jpeg" alt="Elevador lacerda">
+                <img src="images/nordeste4.jpg" alt="Morro do Careca">
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- seção sudeste -->
+
+    <div id="sudeste" class="containerBody" style="background: url(images/regiãoSudeste.jpg);
+        background-size: 100% 100%;">
+        <div class="informs">
+            <h1 style="top: 0; left: 20%;"> Região Sudeste</h1>
+            <p>Destinos para visitar na região Sudeste:</p>
+            <hr>
+            <ul>
+                <li>Ilha Anchieta – São Paulo</li>
+                <li>Lago de Furnas – Minas Gerais</li>
+                <li>Igreja Nossa Senhora do Pilar – Minas Gerais</li>
+                <li>Janela do Céu – Minas Gerais</li>
+                <li>Ilha Grande – Rio de Janeiro</li>
+                <li>Praia do Farol – Rio de Janeiro</li>
+                <li>Cidade Velha – Espírito Santo</li>
+                <li>Cristo Redentor – Rio de Janeiro</li>
+                <li>São José dos Campos – São paulo</li>
+                <li>Barretos – São Paulo</li>
+                <li>Pão de Açucar – Rio de Janeiro</li>
+                <li>Maracanã – Rio de Janeiro</li>
+                <li>Morumbi – São Paulo</li>
+            </ul>
+        </div>
+
+        <!-- carrossel -->
+
+        <section class="galery">
+            <div class="fotos">
+                <img src="images/cristoRedentor.jpg" alt="Cristo Redentor">
+                <img src="images/sudeste2.jpg" alt="Janela do Céu">
+                <img src="images/sudeste3.jpg" alt="Praia do Farol">
+                <img src="images/sudeste4.jpg" alt="Pão de Açucar">
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- seção sul -->
+
+    <div id="sul" class="containerBody" style="background: url(images/regiãosul.jpg);
+        background-size: 100% 100%;">
+        <div class="informs">
+            <h1 style="top: 0; left: 30%;"> Região Sul</h1>
+            <p>Destinos para visitar na região Sul:</p>
+            <hr>
+            <ul>
+                <li>Balneário Camboriú – Santa Catarina</li>
+                <li>Cataratas do Iguaçu – Paraná</li>
+                <li>Vale Europeu – Santa Catarina</li>
+                <li>Catedral de Pedra – Rio Grande do Sul</li>
+                <li>Serra Catarinense – Santa Catarina</li>
+                <li>Beto Carrero World – Santa Catarina</li>
+                <li>Parque Nacional dos Aparados da Serra – Rio Grande do Sul</li>
+                <li>São Miguel das Missões – Rio Grande do Sul</li>
+                <li>Ilha do mel – Paraná</li>
+                <li>Goropaba – Santa Catarina</li>
+                <li>Gramado – Rio Grande do sul</li>
+            </ul>
+        </div>
+
+        <!-- carrossel -->
+
+        <section class="galery">
+            <div class="fotos">
+                <img src="images/regiãosul1.jpg" alt="Cataratas do Iguaçu">
+                <img src="images/regiãosul2.jpg" alt="São Miguel das Missões">
+                <img src="images/regiãosul3.jpg" alt="Beto Carrero World">
+                <img src="images/regiãosul4.jpg" alt="Cidade de Gramado">
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- seção centro oeste -->
+
+    <div id="centro" class="containerBody" style="background: url(images/regiãoCentro.jpg);
+        background-size: 100% 100%;">
+        <div class="informs">
+            <h1 style=" top: 0; left: 25%;"> Região Centro-Oeste</h1>
+            <p>Destinos para visitar na região Centro-Oeste:</p>
+            <hr>
+            <ul>
+                <li>Chapada dos Guimarães - Mato Grosso</li>
+                <li>Parque Estadual Terra Ronca - Goiás</li>
+                <li>Praia da Figueira - Mato Grosso do Sul</li>
+                <li>Cáceres - Mato Grosso</li>
+                <li>Rio Quente - Goiás</li>
+                <li>Rio Sucuri – Mato Grosso do Sul</li>
+                <li>Vale da Lua – Goiás</li>
+                <li>Cachoeira Santa Bárbara – Goiás</li>
+                <li>Parque Estadual serra ronca– Goiás</li>
+                <li>Pantanal – Mato Grosso</li>
+                <li>Praça dos 3 poderes – Brasilia</li>
+                <li>Congresso Nacional – Brasilia</li>
+                <li>Palácio do Planalto – Brasilia</li>
+                <li>Palácio da Alvorada – Brasilia</li>
+            </ul>
+        </div>
+
+        <!-- carrossel -->
+
+        <section class="galery">
+            <div class="fotos">
+                <img src="images/regiãoCentro1.jpg" alt="Vale da Lua">
+                <img src="images/regiãoCentro2.jpg" alt="Pantanal">
+                <img src="images/regiãoCentro3.jpg" alt="Brasilia">
+                <img src="images/regiãoCentro4.jpg" alt="Praia da Figueira">
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <a href="https://www.instagram.com/everton_lucaslima/" target="_blank"><img src="images/instagramIco.png"> </a>
+        <a href="https://www.facebook.com/everton.lucas.545" target="_blank"><img src="images/facebookIco.png"> </a>
+        <a href="https://github.com/EvertonLucasGomes" target="_blank"><img src="images/githubIco.png"> </a>
+    </footer>
+
+
+</body>
+
+</html>

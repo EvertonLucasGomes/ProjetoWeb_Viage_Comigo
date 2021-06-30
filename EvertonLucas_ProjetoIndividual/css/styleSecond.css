@@ -1,0 +1,407 @@
+body {
+  background: rgb(223, 219, 219);
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+h1 {
+  color: white;
+  font-size: clamp(30px, 4vh, 55px);
+  text-align: center;
+  font-family: Georgia, serif;
+  -webkit-text-stroke-width: 0.7px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+h2 {
+  color: white;
+  margin-left: 7%;
+  font-size: clamp(25px, 3.5vh, 50px);
+  font-family: Georgia, serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(84, 134, 214);
+}
+
+p {
+  color: white;
+  margin-left: 7%;
+  margin-right: 7%;
+  font-size: clamp(15px, 3vh, 25px);
+  font-family: arial, serif;
+  text-align: justify;
+}
+
+li {
+  color: white;
+  font-size: clamp(15px, 3vh, 25px);
+  font-family: arial, serif;
+}
+
+/* conteiner usado para englobar seções roteiro e praias */
+
+.containerBody {
+  min-width: 1300px;
+  width: 100%;
+  height: 100vh;
+  min-height: 720px;
+  margin-top: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerBody img {
+  width: 100%;
+  height: 100%;
+}
+
+/* cards dentro do container body */
+
+.informs {
+  position: relative;
+  background-color: rgba(8, 8, 8, 0.6);
+  width: 28%;
+  max-width: 700px;
+  height: 80%;
+}
+.informs:hover .overlayFront {
+  height: 90%;
+}
+
+.informs2 {
+  background: rgba(0, 0, 0, 0.5);
+  margin-left: 10%;
+  width: 28%;
+  max-width: 550px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* container do menu */
+
+.containerMenu {
+  position: block;
+  display: flex;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: clamp(5em, 13vh, 15em);
+  background: rgba(26, 75, 131, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+/* configs links */
+
+a.textMenu {
+  font-size: clamp(15px, 2.5vh, 35px);
+  color: rgb(0, 0, 0);
+  font-family: Georgia, serif;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+a.textBotton {
+  font-size: clamp(10px, 2vh, 30px);
+  color: rgb(0, 0, 0);
+  font-family: Georgia, serif;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+a.Image {
+  width: 30%;
+  text-decoration: none;
+}
+
+/* box uso geral de imagens */
+
+.box {
+  width: 100%;
+  max-width: 780px;
+}
+
+/* cards menu */
+
+#card {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  transition: 0.3s;
+  width: 12%;
+  height: 80%;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2%;
+}
+
+#card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+}
+
+/* configs botão voltar ao topo */
+
+.Voltar {
+  background-color: rgb(156, 191, 231);
+  position: fixed;
+  top: 90%;
+  left: 87%;
+  width: clamp(80px, 12%, 250px);
+  height: clamp(40px, 5%, 150px);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  transition: 0.3s;
+}
+
+.Voltar:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+}
+
+/* containet seção Fale conosco */
+
+.containerForm {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-width: 1000px;
+  width: 80%;
+  padding: 2%;
+  margin: 0 auto;
+}
+
+/* classe para fonte título */
+
+.titulo {
+  text-align: left;
+  font-size: clamp(40px, 3vw, 55px);
+  font-family: Georgia, serif;
+  background-image: linear-gradient(#070707, rgb(44, 55, 206));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-stroke-width: 0.01vw;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+.tituloManual {
+  text-align: center;
+  font-size: clamp(15px, 1.8vw, 40px);
+  font-family: Georgia, serif;
+  background-image: linear-gradient(#070707, rgb(44, 55, 206));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-stroke-width: 0.01vw;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+/* Efeito do card Informs seção praias */
+
+.imageFront {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlayFront {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.textFront {
+  position: absolute;
+  overflow: hidden;
+}
+
+/* container mapa do Brasil seção roteiros */
+
+.cotainerBrasil {
+  background: url(../images/cristoRedentor.jpg);
+  margin-top: 1%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* efeito Carrossel */
+
+.galery {
+  margin-left: 10%;
+  min-width: 400px;
+  width: 40%;
+  max-width: 1000px;
+  height: 50%;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.galery .fotos {
+  width: 500%;
+  height: 100%;
+  animation-name: animacao;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.galery .fotos img {
+  width: 20%;
+}
+
+@keyframes animacao {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100.35%;
+  }
+  45% {
+    margin-left: -100.35%;
+  }
+  50% {
+    margin-left: -201%;
+  }
+  70% {
+    margin-left: -201%;
+  }
+  75% {
+    margin-left: -302%;
+  }
+  95% {
+    margin-left: -302%;
+  }
+  101% {
+    margin-left: -400%;
+  }
+}
+
+/* imagem decoration */
+
+.decor {
+  position: fixed;
+  top: 20%;
+  min-width: 270px;
+  width: 30vw;
+}
+
+table {
+  width: 50%;
+  text-align: justify;
+  font-size: clamp(1rem, 1vw, 4rem);
+  font-family: Arial;
+  border-bottom: 0px solid rgb(255, 255, 255);
+}
+table th {
+  font-size: clamp(1.5rem, 3vw, 4rem);
+  font-family: Georgia, serif;
+  background-image: linear-gradient(#070707, rgb(44, 55, 206));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-stroke-width: 0.01vw; /* largura da borda */
+  -webkit-text-stroke-color: rgb(0, 0, 0); /* cor da borda */
+  border-bottom: 2vw solid rgb(255, 255, 255);
+}
+
+/* div para titulos */
+
+.backgroundTitle {
+  width: 100%;
+  background-color: rgb(116, 223, 255);
+  border: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* div forms */
+
+.backgroundForm {
+  width: 100%;
+  background-color: rgb(32, 96, 116);
+  border: none;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+/* botões */
+
+.btn-submit {
+  width: 40%;
+  height: 2rem;
+  text-transform: uppercase;
+  background: #160e1b;
+  font-size: 1.2rem;
+  font-family: var(--font-aciton);
+  color: #b1aeae;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+/* inputs */
+
+.conteudo {
+  background: transparent;
+  border: none;
+  width: 20rem;
+  font-size: 1.5rem;
+  font-family: var(--font-secundary);
+  color: white;
+  border-bottom: 2px dashed #ffffffab;
+  height: 2rem;
+  outline: none;
+  margin: 1rem 0;
+}
+
+/* labels */
+
+.conteudoLabel {
+  font-size: 1.5rem;
+  font-family: var(--font-secundary);
+  color: white;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+}
